@@ -1,3 +1,3 @@
 # code-louisville
 Hello,
-This just the beginning and hopefully will develop better websites.
+This is the first website I have ever built, hopefully many more to come.
