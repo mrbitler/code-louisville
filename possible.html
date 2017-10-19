@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>     
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   background-color:white;
+   
+}
+/* Style the header */
+.header {
+    background: url("../Desktop/pexels-photo-54567.jpg") no-repeat right top;
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Style the footer */
+.footer {
+    background-color:lightgrey;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+ 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+</style>
+
+</head>
+<body>
+
+ <div class="header">
+  <h2 style="font-size: 500%;">Fantasy Football</h2>
+  <h3 style="font-size: 200%;">Butler Family League</h3>
+  <p>The League that begun 6 years ago as family friendly league has turned into a competitive and fierce league.  Will 2017 crown a first time champion?</p>
+ 
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:blue;">
+    <h1>Hall of Champions</h1>
+    <p>2016 Fighting Beagles(Bob Butler)</p>
+    <p>2015 Unicorn Princess(Sarah Butler)</p>
+    <p>2014 Unicorn Princess(Sarah Butler) </p>
+    <p>2013 Butler Fighting Ewoks(Mike Butler) </p>
+    <p>2012 Grand Ma and Pa Lydick(Dennis Lydick)</p>
+    <p>2011 Grand Ma and Pa Lydick(Dennis Lydick)</p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <h2>What we play for:</h2>
+    <img src="../Pictures/Butler Trophy.jpg" alt="Trophy">
+  </div>
+  <div class="column" style="background-color:blue;">
+    <h3>Current Standings</h3>
+      <p>1. Unicorn Princess</p>
+      <p>2. Louisville Sluggers</p>
+      <p>3. Livs Cute Kids</p>
+      <p>4. Butler Bulldogs</p>
+      <p>5. Lake George Cluster#@$*s</p>
+      <p>6. Prestige  Worldwide</p>
+      <p>7. Occam's Razorblades</p>
+      <p>8. Fighting Beagles</p>
+      <p>9. Grand Ma and Pa Lydick</p>
+      <p>10. Team ST. Louis</p>
+    </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+  <h2>Subscribe to Newsletter</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Here</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Thank You</h4>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+ </body>
+</html>
