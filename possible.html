@@ -19,10 +19,27 @@ body {
 }
 /* Style the header */
 .header {
-    background: url("pexels-photo-54567.jpg") no-repeat right top;
+    background: url("../Desktop/pexels-photo-54567.jpg") no-repeat right top;
     padding: 50px;
     text-align: center;
     font-style: italic;
+    
+}
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    }
+ a {
+    display: inline;
+    padding: 8px;
+    color:black;
 }
 
 /* Container for flexboxes */
@@ -42,8 +59,7 @@ body {
 
 /* Style the footer */
 .footer {
-    background-color:lightgrey;
-    padding: 10px;
+    background-color:lightsteelblue;
     text-align: center;
     margin: 0;
 }
@@ -61,6 +77,12 @@ body {
 <body>
 
  <div class="header">
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">espn.com</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
   <h2 style="font-size: 500%;">Fantasy Football</h2>
   <h3 style="font-size: 200%;">Butler Family League</h3>
   <p>The League that begun 6 years ago as family friendly league has turned into a competitive and fierce league.  Will 2017 crown a first time champion?</p>
@@ -68,7 +90,7 @@ body {
 </div>
 
 <div class="row">
-  <div class="column" style="background-color:blue;">
+  <div class="column" style="background-color:lightsteelblue;">
     <h1>Hall of Champions</h1>
     <p>2016 Fighting Beagles(Bob Butler)</p>
     <p>2015 Unicorn Princess(Sarah Butler)</p>
@@ -79,9 +101,9 @@ body {
   </div>
   <div class="column" style="background-color:white;">
     <h2>What we play for:</h2>
-    <img src="Butler Trophy.jpg" alt="Trophy">
+    <img src="../Pictures/Butler Trophy.jpg" alt="Trophy">
   </div>
-  <div class="column" style="background-color:blue;">
+  <div class="column" style="background-color:lightsteelblue;">
     <h3>Current Standings</h3>
       <p>1. Unicorn Princess</p>
       <p>2. Louisville Sluggers</p>
@@ -98,9 +120,9 @@ body {
 
 <div class="footer">
   <div class="container">
-  <h2>Subscribe to Newsletter</h2>
+  <h4>Subscribe to Newsletter</h4>
   <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Here</button>
+  <button type="button" class="btn btn-info btn-lg" id="myBtn">Click Here</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -108,12 +130,20 @@ body {
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Thank You</h4>
+          <h4 class="modal-title">Enter Email</h4>
+            <p>Thanks</p>
         </div>
         </div>
     </div>
   </div>
 </div>
 </div>
+<script>
+    $(document).ready(function(){
+    $("#myBtn").click(function(){
+    $("#myModal").modal();
+    });
+});
+</script>
  </body>
 </html>
