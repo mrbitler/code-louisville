@@ -1,5 +1,5 @@
 
     function openWin() {
-       window.open("Still Under Construction") 
+       window.alert("First one will arrive soon, thanks") 
          }
  
