@@ -8,5 +8,5 @@ function myFunction() {
 }
 // Function for go back button:
 function goBack() {
-     window.location = "possible.html";
+     window.location.href = "possible.html";
 }
